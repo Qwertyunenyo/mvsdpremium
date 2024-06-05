@@ -252,6 +252,7 @@ test("crypt.hash", {}, function()
 	end
 end)
 
+
 test("debug.getconstant", {}, function()
 	local function test()
 		print("Hello, world!")
@@ -384,6 +385,7 @@ test("debug.setupvalue", {}, function()
 	assert(test() == "success", "debug.setupvalue did not set the first upvalue")
 end)
 
+
 if isfolder and makefolder and delfolder then
 	if isfolder(".tests") then
 		delfolder(".tests")
@@ -470,6 +472,7 @@ end)
 
 test("dofile", {})
 
+
 test("isrbxactive", {"isgameactive"}, function()
 	assert(type(isrbxactive()) == "boolean", "Did not return a boolean value")
 end)
@@ -491,6 +494,7 @@ test("mousemoveabs", {})
 test("mousemoverel", {})
 
 test("mousescroll", {})
+
 
 test("fireclickdetector", {}, function()
 	local detector = Instance.new("ClickDetector")
@@ -579,6 +583,7 @@ end)
 
 test("setrbxclipboard", {})
 
+
 test("getrawmetatable", {}, function()
 	local metatable = { __metatable = "Locked!" }
 	local object = setmetatable({}, metatable)
@@ -628,6 +633,7 @@ test("setreadonly", {}, function()
 	object.success = true
 	assert(object.success, "Did not allow the table to be modified")
 end)
+
 
 test("identifyexecutor", {"getexecutorname"}, function()
 	local name, version = identifyexecutor()
@@ -683,6 +689,7 @@ test("setfpscap", {}, function()
 	local step0 = step()
 	return step60 .. "fps @60 • " .. step0 .. "fps @0"
 end)
+
 
 test("getgc", {}, function()
 	local gc = getgc()
@@ -759,6 +766,7 @@ test("setthreadidentity", {"setidentity", "setthreadcontext"}, function()
 	assert(getthreadidentity() == 3, "Did not set the thread identity")
 end)
 
+
 test("Drawing", {})
 
 test("Drawing.new", {}, function()
@@ -806,6 +814,7 @@ end)
 test("cleardrawcache", {}, function()
 	cleardrawcache()
 end)
+
 
 test("WebSocket", {})
 
